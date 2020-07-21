@@ -1,0 +1,27 @@
+
+
+[Kafka]
+
+1. A streaming platform has three key capabilities:
+
+   Publish and subscribe to streams of records, similar to a message queue or enterprise messaging system.
+   Store streams of records in a fault-tolerant durable way.
+   Process streams of records as they occur.
+
+2. Kafka is generally used for two broad classes of applications:
+
+   Building real-time streaming data pipelines that reliably get data between systems or applications
+   Building real-time streaming applications that transform or react to the streams of data
+
+3. Topics and Logs
+
+    There are different partitions in one topic.
+    There are different records in one partition.
+
+    The Kafka can store data for a long time,
+    using a configurable retention period.
+
+4. Distribution
+
+    Each partition is replicated across a configurable number of servers for fault tolerance.
+    Each partition has one server which acts as the "leader" and zero or more servers which act as "followers".
