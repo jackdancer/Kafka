@@ -1,0 +1,12 @@
+
+创建topic
+./kafka-topics.sh --create --zookeeper hadoop0:2181 --replication-factor 1 --partitions 1 --topic kafka_streaming_topic
+
+查看zookeeper上的topics
+./kafka-topics.sh --list --zookeeper hadoop0:2181
+
+创建生产者
+./kafka-console-producer.sh --broker-list hadoop0:9092 --topic kafka_streaming_topic
+
+创建消费者
+./kafka-console-consumer.sh --zookeeper hadoop0:2181 --topic kafka_streaming_topic
