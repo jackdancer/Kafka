@@ -1,0 +1,9 @@
+
+
+spark-submit \
+--class com.imooc.spark.KafkaDirectWordCount2 \
+--master local[2] \
+--name KafkaDirectWordCount2 \
+--packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.2.0 \
+/home/hadoop/lib/sparktrain-1.0.jar \
+hadoop0:9092 kafka_streaming_topic
